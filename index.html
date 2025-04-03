@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Juice Laundry - Official</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("Images/food.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">Home</a>
+    <a href="#Menu" class="w3-bar-item w3-button">Menu</a>
+    <a href="#about" class="w3-bar-item w3-button">About</a>
+    <a href="#myMap" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">We are 100% Organic, Non-GMO, Vegan, Gluten Free, Peanut Free, Soy Free and Dairy free 100% of the time</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-black w3-hide-small" style="font-size:100px">Raw. Fresh.<br> Clean. Organic. <br>  Curious. Passionate. <br> Transparent.</span>
+    <span class="w3-text-black w3-hide-large w3-hide-medium" style="font-size:60px"><b>Raw, Fresh, Clean<br>Organic, Curious, Passionate, Transparent.</b></span>
+    <p><a href="#Menu" class="w3-button w3-xxlarge w3-black">Go to Menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="Menu">
+  <div class="w3-content">
+
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Our Menu</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Superfood Smoothies');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Superfood Smoothies</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Boosters');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Boosters</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Acai Bowls & More');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Acai Bowls & More</div>
+      </a>
+    </div>
+
+    <div id="Superfood Smoothies" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Coco Verde</b> </h1>
+      <p class="w3-text-grey">kale, spinach, mango, banana, dates, coconut oil, coconut water</p>
+      <hr>
+   
+      <h1><b>Bradley's CB&J</b> </h1>
+      <p class="w3-text-grey">strawberry, banana, cashew butter, dates, dragonfruit, house cashew milk</p>
+      <hr>
+      
+      <h1><b>Superman</b> </h1>
+      <p class="w3-text-grey">blueberries, goji berries, banana, dates, dragonfruit, house almond milk</p>
+      <hr>
+
+      <h1><b>The Blaze</b> </h1>
+      <p class="w3-text-grey">strawberry, mango, banana, dates, ginger, cayenne, house cashew milk</p>
+      <hr>
+
+      <h1><b>Tropic Energy</b> </h1>
+      <p class="w3-text-grey">mango, banana, dates, dragonfruit, brewed guayusa</p>
+      <hr>
+
+      <h1><b>Basil Bomb</b> </h1>
+      <p class="w3-text-grey">strawberry, banana, basil, dates, house almond milk</p>
+
+      <h1><b>Blended Brew</b> </h1>
+      <p class="w3-text-grey">banana, cashew butter, cold brew coffee, cacao (optional)</p>
+
+      <h1><b>Cacao Monster</b> </h1>
+      <p class="w3-text-grey">banana, cashew butter, cacao, house almond milk</p>
+
+      <h1><b>Kid Dynamite</b> </h1>
+      <p class="w3-text-grey">banana, dragonfruit, house cashew milk</p>
+
+    </div>
+
+    <div id="Boosters" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Acai</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <hr>
+
+      <h1><b>Acai</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <hr>
+
+      <h1><b>Chia Seeds</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <hr>
+
+      <h1><b>Hemp Protein</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <hr>
+
+      <h1><b>Spinach</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <hr>
+
+      <h1><b>Kale</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <hr>
+
+      <h1><b>Matcha</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <hr>
+
+      <h1><b>Goji Berries</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <hr>
+
+      <h1><b>Vegan Probiotic</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <hr>
+
+      <h1><b>Wheatgrass</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <hr>
+
+      <h1><b>Maca</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <hr>
+
+      <h1><b>Cacao</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <hr>
+
+      <h1><b>Aloe Vera</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <hr>
+
+      <h1><b>Coconut Oil</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <hr>
+
+      <h1><b>Flax Seeds</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <hr>
+
+      <h1><b>Ginger</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <hr>
+    </div>
+
+
+    <div id="Acai Bowls & More" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Acai Smoothie Bowl</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Pick any smoothie to use as the base for your bowl. Smoothie bowls come blended with acai and topped with fruit and our house granola</p>
+      <hr>
+
+      <h1><b>Gluten Free Oats Bowl</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Oats soaked in our house cashew milk, served cold, choice of 2 toppings included</p>
+      <hr>
+
+      <h1><b>Quinoa Bowl</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Quinoa cooked in our house cashew milk, served cold, choice of 2 toppings included</p>
+      <hr>
+
+      <h1><b>Combination Bowl</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Combination of oats and quinoa, served cold, choice of 2 toppings included</p>
+      <hr>
+
+      <h1><b>Vanilla Cashew Parfait</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">A vegan take on Greek-style yogurt, loaded with probiotics and topped with berries and our house granola</p>
+      <hr>
+
+      <h1><b>Chia Seed Pudding</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Available in Strawberry, Chocolate, Vanilla Goji, and Vanilla Matcha flavors</p>
+      <hr>
+   
+      <h1><b>House Granola</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">You asked for it, so we've made our granola available in 16 oz containers</p>
+      <hr>
+      
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About The Juice Laundry</h1>
+    <p>The Juice Laundry was founded on the concept of keeping our bodies clean and healthy, starting with what we put into them. Raw, organic fruits and veggies are nature’s medicine and the foundation of preventative health care. Whether juiced, blended, or eaten whole, fresh produce is full of life-giving nutrients and enzymes. We choose to use 100% organic ingredients, 100% of the time, because the phrase “organic when possible” is often highly misleading. If we can’t find something organic on a given day, it won’t be on our menu. That’s our commitment to you, and to your health. Thanks for checking us out!</p>
+    
+    <img src="Images/logo-small.png" style="width:10%" class="w3-display-bottomright" alt="Logo">
+
+
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon - Friday 8:00 am - 3:00 pm</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Saturday & Sunday 8:00 am - 3:00 pm </p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id = "myMap">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at one of our two locations <br>(1) 722 Preston Ave <br> and <br>(2) 450 Whitehead Rd, <br> Both in Charlottesville, VA! </p>
+
+    <img src="Images/location1.png" style="width:50%" class="w3-display-center" alt="Location 1">
+    <img src="Images/location2.png" style="width:45%" class="w3-display-center" alt="Location 2">
+
+    <p>Or Call us at: +1 (434) 234-3044</p>
+
+    <p><span class="w3-tag">Remember! We are 100% Organic/Non-GMO/Vegan/Gluten-Free/Peanut-Free/Soy-Free/Dairy Free 100% of the time</span></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Website made by Comail Rizvi using the express help of <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
