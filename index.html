@@ -42,7 +42,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
   </div>
 </header>
 
-<!-- Menu Container -->
+
+
+<!-- Old Menu Container -->
 <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="Menu">
   <div class="w3-content">
 
@@ -59,7 +61,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
       </a>
     </div>
 
-    <div id="Superfood Smoothies" class="w3-container menu w3-padding-32 w3-white">
+    <div id="Superfood Smoothies" class="w3-container menu w3-padding-32 w3-white" style="display: flex; gap: 20px;">
       <h1><b>Coco Verde</b> </h1>
       <p class="w3-text-grey">kale, spinach, mango, banana, dates, coconut oil, coconut water</p>
       <hr>
@@ -95,54 +97,129 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
     </div>
 
     <div id="Boosters" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Acai</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
 
-      <h1><b>Acai</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <h1 class="booster-item">
+        <img src="images/acai.jpg" alt="Acai" class="booster-icon">
+        <b>Acai</b>
+        <span class="w3-tag w3-grey w3-round">Superfood</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">+$1.00</span>
+      </h1>
       <hr>
-
-      <h1><b>Chia Seeds</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+    
+      <h1 class="booster-item">
+        <img src="images/chia-seeds.jpg" alt="Chia Seeds" class="booster-icon">
+        <b>Chia Seeds</b>
+        <span class="w3-tag w3-grey w3-round">Omega-3</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">+$0.75</span>
+      </h1>
       <hr>
-
-      <h1><b>Hemp Protein</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+    
+      <h1 class="booster-item">
+        <img src="images/hemp-protein.jpg" alt="Hemp Protein" class="booster-icon">
+        <b>Hemp Protein</b>
+        <span class="w3-tag w3-grey w3-round">Protein Boost</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">+$1.00</span>
+      </h1>
       <hr>
-
-      <h1><b>Spinach</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+    
+      <h1 class="booster-item">
+        <img src="images/spinach.jpg" alt="Spinach" class="booster-icon">
+        <b>Spinach</b>
+        <span class="w3-tag w3-grey w3-round">Iron-Rich</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">+$0.50</span>
+      </h1>
       <hr>
-
-      <h1><b>Kale</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+    
+      <h1 class="booster-item">
+        <img src="images/kale.jpg" alt="Kale" class="booster-icon">
+        <b>Kale</b>
+        <span class="w3-tag w3-grey w3-round">Detox</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">+$0.50</span>
+      </h1>
       <hr>
-
-      <h1><b>Matcha</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+    
+      <h1 class="booster-item">
+        <img src="images/matcha.jpg" alt="Matcha" class="booster-icon">
+        <b>Matcha</b>
+        <span class="w3-tag w3-grey w3-round">Energy</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">+$1.25</span>
+      </h1>
       <hr>
-
-      <h1><b>Goji Berries</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+    
+      <h1 class="booster-item">
+        <img src="images/goji-berries.jpg" alt="Goji Berries" class="booster-icon">
+        <b>Goji Berries</b>
+        <span class="w3-tag w3-grey w3-round">Antioxidant</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">+$0.75</span>
+      </h1>
       <hr>
-
-      <h1><b>Vegan Probiotic</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+    
+      <h1 class="booster-item">
+        <img src="images/vegan-probiotic.jpg" alt="Vegan Probiotic" class="booster-icon">
+        <b>Vegan Probiotic</b>
+        <span class="w3-tag w3-grey w3-round">Gut Health</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">+$1.00</span>
+      </h1>
       <hr>
-
-      <h1><b>Wheatgrass</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+    
+      <h1 class="booster-item">
+        <img src="images/wheatgrass.jpg" alt="Wheatgrass" class="booster-icon">
+        <b>Wheatgrass</b>
+        <span class="w3-tag w3-grey w3-round">Cleanse</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">+$1.00</span>
+      </h1>
       <hr>
-
-      <h1><b>Maca</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+    
+      <h1 class="booster-item">
+        <img src="images/maca.jpg" alt="Maca" class="booster-icon">
+        <b>Maca</b>
+        <span class="w3-tag w3-grey w3-round">Hormone Balance</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">+$1.00</span>
+      </h1>
       <hr>
-
-      <h1><b>Cacao</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+    
+      <h1 class="booster-item">
+        <img src="images/cacao.jpg" alt="Cacao" class="booster-icon">
+        <b>Cacao</b>
+        <span class="w3-tag w3-grey w3-round">Mood Boost</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">+$0.75</span>
+      </h1>
       <hr>
-
-      <h1><b>Aloe Vera</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+    
+      <h1 class="booster-item">
+        <img src="images/aloe-vera.jpg" alt="Aloe Vera" class="booster-icon">
+        <b>Aloe Vera</b>
+        <span class="w3-tag w3-grey w3-round">Hydration</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">+$0.75</span>
+      </h1>
       <hr>
-
-      <h1><b>Coconut Oil</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+    
+      <h1 class="booster-item">
+        <img src="images/coconut-oil.jpg" alt="Coconut Oil" class="booster-icon">
+        <b>Coconut Oil</b>
+        <span class="w3-tag w3-grey w3-round">MCTs</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">+$0.50</span>
+      </h1>
       <hr>
-
-      <h1><b>Flax Seeds</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+    
+      <h1 class="booster-item">
+        <img src="images/flax-seeds.jpg" alt="Flax Seeds" class="booster-icon">
+        <b>Flax Seeds</b>
+        <span class="w3-tag w3-grey w3-round">Fiber</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">+$0.50</span>
+      </h1>
       <hr>
-
-      <h1><b>Ginger</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+    
+      <h1 class="booster-item">
+        <img src="images/ginger.jpg" alt="Ginger" class="booster-icon">
+        <b>Ginger</b>
+        <span class="w3-tag w3-grey w3-round">Anti-Inflammatory</span>
+        <span class="w3-right w3-tag w3-dark-grey w3-round">+$0.50</span>
+      </h1>
       <hr>
+    
     </div>
+    
 
 
     <div id="Acai Bowls & More" class="w3-container menu w3-padding-32 w3-white">
@@ -178,6 +255,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 
   </div>
 </div>
+
 
 <!-- About Container -->
 
