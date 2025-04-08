@@ -1,350 +1,500 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>The Juice Laundry - Official</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
-<style>
-body, html {height: 100%}
-body,h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
-.menu {display: none}
-.bgimg {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("images/backgrounds/farming.jpg");
-  min-height: 90%;
-}
-.center-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-</style>
-</head>
-<body>
+   <head>
+      <title>The Juice Laundry - Official</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="The Juice Laundry - 100% Organic Smoothies, Bowls, and Boosters.">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+      <style>
+         body, html {height: 100%}
+         body,h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
+         .menu {display: none}
+         .bgimg {
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-image: url("images/backgrounds/farming.jpg");
+         min-height: 90%;
+         }
+         .center-wrapper {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Navbar -->
+      <div class="w3-top w3-hide-small">
+         <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#Menu" class="w3-bar-item w3-button">Menu</a>
+            <a href="#about" class="w3-bar-item w3-button">About</a>
+            <a href="#myMap" class="w3-bar-item w3-button">Contact</a>
+            <div style="position: fixed; top: 10px; right: 10px; z-index: 999;">
+              <span class="w3-hide-small">Nature’s Best in Every Blend!</span>
+            </div>
+         </div>
+      </div>
+      <!-- Header -->
+      <header class="bgimg w3-display-container w3-grayscale-min" id="home">
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top w3-hide-small">
-  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
-    <a href="#" class="w3-bar-item w3-button">Home</a>
-    <a href="#Menu" class="w3-bar-item w3-button">Menu</a>
-    <a href="#about" class="w3-bar-item w3-button">About</a>
-    <a href="#myMap" class="w3-bar-item w3-button">Contact</a>
-  </div>
-</div>
-  
-<!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-bottommiddle w3-padding">
-    <span class="w3-tag w3-xlarge center-wrapper">We are 100% Organic, Non-GMO, Vegan, Gluten Free, Peanut Free, Soy Free and Dairy free 100% of the time</span>
-  </div>
-  <div class="w3-display-middle w3-center">
-    <span class="w3-hide-small" style="font-size:100px; color:rgb(0, 100, 128);">Nature’s Best in Every Blend!</span>
-    <span class="w3-text-black w3-hide-large w3-hide-medium" style="font-size:60px"><b>We are 100% Organic, Non-GMO, Vegan, Gluten Free, Peanut Free, Soy Free and Dairy free 100% of the time</b></span>
-    <p><a href="#Menu" class="w3-button w3-xxlarge w3-black">Go to Menu</a></p>
-  </div>
-</header>
-
-<!-- Menu Container -->
-<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="Menu">
-  <div class="w3-content">
-
-    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Our Menu</h1>
-    <div class="w3-row w3-center w3-border w3-border-dark-grey">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Superfood Smoothies');" id="myLink">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Superfood Smoothies</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Boosters');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Boosters</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Acai Bowls & More');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Acai Bowls & More</div>
-      </a>
-    </div>
-
-    <div id="Superfood Smoothies" class="w3-container menu w3-padding-32 w3-white">
-      <div class="w3-row w3-margin-bottom">
-        <!-- Left: Text -->
-        <div class="w3-col s12 m8">
-
-          <h1><b>Coco Verde</b></h1>
-          <p class="w3-text-grey">kale, spinach, mango, banana, dates, coconut oil, coconut water</p>
+        <!-- Visible only on medium and large screens -->
+        <div class="w3-display-bottommiddle w3-padding w3-container w3-hide-small">
+          <div class="w3-pale-green w3-round-large w3-padding-large w3-center w3-card-2" style="max-width: 90%; margin: auto;">
+            <span class="w3-large w3-text-black">
+              We are 100% Organic, Non-GMO, Vegan, Gluten-Free, Peanut-Free, Soy-Free, and Dairy-Free — 100% of the time.
+            </span>
+          </div>
         </div>
       
-        <!-- Right: Image -->
-        <div class="w3-col s12 m4">
-          <img src="images/coco-verde.jpg" alt="Coco Verde" style="width:100%; max-width:200px;" class="w3-right">
+        <!-- Visible only on small screens -->
+        <div class="w3-display-middle w3-center w3-hide-medium w3-hide-large">
+          <div class="w3-pale-green w3-round-large w3-padding w3-card-2" style="margin: auto; max-width: 90%;">
+            <span class="w3-medium w3-text-black">
+              <b>100% Organic, Non-GMO, Vegan, Gluten-Free, Peanut-Free, Soy-Free, Dairy-Free — Always.</b>
+            </span>
+          </div>
         </div>
-      </div>
-      <hr>
-   
-      <div class="w3-row w3-margin-bottom">
-        <!-- Left: Text -->
-        <div class="w3-col s12 m8">
-      <h1><b>Bradley's CB&J</b></h1>
-      <p class="w3-text-grey">strawberry, banana, cashew butter, dates, dragonfruit, house cashew milk</p>
-</div>
-      <div class="w3-col s12 m4">
-        <img src="Images/smoothies-bowls/415-cbj.jpg" alt="Bradley's CB&J" style="width:100%; max-width:200px;" class="w3-right">
-      </div>
-    </div>
-    <hr>
       
-    <div class="w3-row w3-margin-bottom">
-      <!-- Left: Text -->
-      <div class="w3-col s12 m8"> 
-    <h1><b>Superman</b> </h1>
-      <p class="w3-text-grey">blueberries, goji berries, banana, dates, dragonfruit, house almond milk</p>
-     </div>
+      </header
+      <!-- Include your full menu sections here (unchanged from your existing content) -->
+      <!-- Below is the fixed menu tab structure -->
+      <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="Menu">
+         <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Our Menu</h1>
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+               <a href="javascript:void(0)" onclick="openMenu(event, 'Smoothies');">
+                  <div id="myLink" class="w3-col s4 tablink w3-padding-large w3-hover-red">Smoothies</div>
+               </a>
+               <a href="javascript:void(0)" onclick="openMenu(event, 'Boosters');">
+                  <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Boosters</div>
+               </a>
+               <a href="javascript:void(0)" onclick="openMenu(event, 'Bowls & More');">
+                  <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Bowls & More</div>
+               </a>
+            </div>
+            <!-- Keep the rest of your menu items below unchanged -->
+            <!-- This includes divs with ids: Superfood Smoothies, Boosters, Acai Bowls & More -->
+            <div id="Smoothies" class="w3-container menu w3-padding-32 w3-white">
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Coco Verde</b></h1>
+                     <p class="w3-text-grey">kale, spinach, mango, banana, dates, coconut oil, coconut water</p>
+                  </div>
+                  <!-- Right: Image -->
+                  <div class="w3-col s12 m4">
+                     <img src="images/coco-verde.jpg" alt="Coco Verde" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Bradley's CB&J</b></h1>
+                     <p class="w3-text-grey">strawberry, banana, cashew butter, dates, dragonfruit, house cashew milk</p>
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="Images/smoothies-bowls/415-cbj.jpg" alt="Bradley's CB&J" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Superman</b> </h1>
+                     <p class="w3-text-grey">blueberries, goji berries, banana, dates, dragonfruit, house almond milk</p>
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="Images/smoothies-bowls/416-super.jpg" alt="Superman" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>The Blaze</b> </h1>
+                     <p class="w3-text-grey">strawberry, mango, banana, dates, ginger, cayenne, house cashew milk</p>
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="Images/smoothies-bowls/417-blaze.jpg" alt="The Blaze" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Tropic Energy</b> </h1>
+                     <p class="w3-text-grey">mango, banana, dates, dragonfruit, brewed guayusa</p>
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="Images/smoothies-bowls/452-tropic-energy.jpg" alt="Tropic Energy" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Basil Bomb</b> </h1>
+                     <p class="w3-text-grey">strawberry, banana, basil, dates, house almond milk</p>
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="Images/smoothies-bowls/basil-bomb.jpg" alt="Basil Bomb" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Blended Brew</b> </h1>
+                     <p class="w3-text-grey">banana, cashew butter, cold brew coffee, cacao (optional)</p>
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="Images/smoothies-bowls/451-blended-brew.jpg" alt="Blended Brew" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Cacao Monster</b> </h1>
+                     <p class="w3-text-grey">banana, cashew butter, cacao, house almond milk</p>
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="Images/smoothies-bowls/453-cacao-monster.jpg" alt="Cacao Monster" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Kid Dynamite</b> </h1>
+                     <p class="w3-text-grey">banana, dragonfruit, house cashew milk</p>
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="Images/smoothies-bowls/465-waterboy.jpg.jpg" alt="Kid Dynamite" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+            </div>
+            <div id="Boosters" class="w3-container menu w3-padding-32 w3-white">
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Acai</b></h1>
+                     <p class="w3-text-grey">A powerful antioxidant-rich berry known for supporting heart health and fighting inflammation due to high anthocyanins and omega-3s. It also boosts energy and supports skin health with vitamins C and A.</p>
 
-      <div class="w3-col s12 m4">
-        <img src="Images/smoothies-bowls/416-super.jpg" alt="Superman" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+
+                  <!-- Right: Image -->
+                  <div class="w3-col s12 m4">
+                     <img src="images/ingredients/acai.png" alt="Acai" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Chia Seeds</b></h1>
+                     <p class="w3-text-grey">Rich in omega-3s, fiber, and protein—supports digestion, energy, blood sugar, heart, and bone health with calcium and magnesium.</p>
+
+                  <!-- Right: Image -->
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="images/ingredients/chia seeds.png" alt="Chia Seeds" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Hemp Protein</b> </h1>
+                     <p class="w3-text-grey">A complete plant protein with all 9 essential amino acids—great for muscle repair, energy, digestion, and immune support.</p>
+
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="images/ingredients/hemp protein.png" alt="Hemp Protein" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Spinach</b> </h1>
+                     <p class="w3-text-grey">High in iron, vitamin K, and folate—supports blood, bones, cells, reduces inflammation, and boosts immunity.</p>
+
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="images/ingredients/spinach.jpeg" alt="Spinach" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Kale</b> </h1>
+                     <p class="w3-text-grey">Leafy green rich in vitamins A, C, and K—supports eyes, immunity, bones, detox, and liver health.</p>
+
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="images/ingredients/kale.jpeg" alt="Kale" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Matcha</b> </h1>
+                     <p class="w3-text-grey">Finely ground green tea rich in EGCG—boosts metabolism, protects cells, and provides calm, sustained energy.</p>
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="images/ingredients/matcha.jpeg" alt="Matcha" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Goji Berries</b> </h1>
+                     <p class="w3-text-grey">Superfruit rich in vitamin C, iron, and antioxidants—supports immunity, skin, eyes, and energy.</p>
+
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="images/ingredients/goji berries.jpeg" alt="Goji Berries" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Vegan Probiotic</b> </h1>
+                     <p class="w3-text-grey">Supports gut health by restoring good bacteria—improves digestion, absorption, immunity, and mental clarity.</p>
+
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="images/ingredients/vegan probiotic.jpeg" alt="Vegan Probiotic" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Wheatgrass</b> </h1>
+                     <p class="w3-text-grey">Detox powerhouse with chlorophyll, vitamins, and minerals—supports liver, alkalizes, boosts energy, reduces inflammation, and improves skin.</p>
+
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="images/ingredients/wheat grass.jpeg" alt="Wheatgrass" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Maca</b> </h1>
+                     <p class="w3-text-grey">Adaptogenic root that balances hormones, boosts energy, mood, libido, endurance, and vitality.</p>
+
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="images/ingredients/maca.jpeg" alt="Maca" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Aloe Vera</b> </h1>
+                     <p class="w3-text-grey">Soothes digestion, supports gut health, hydrates skin and body—promotes overall wellness.</p>
+
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="images/ingredients/aloe vera.jpeg" alt="Aloe Vera" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Coconut Oil</b> </h1>
+                     <p class="w3-text-grey">Contains MCTs for quick energy and brain support—also boosts gut and immune health with antimicrobial properties.</p>
+
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="images/ingredients/coconut oil.jpeg" alt="Coconut Oil" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+                <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Flax Seeds</b> </h1>
+                     <p class="w3-text-grey">Rich in omega-3s, lignans, and fiber—supports heart, hormones, digestion, cholesterol, and satiety.</p>
+
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="images/ingredients/flax seeds.jpeg" alt="Flax Seeds" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Ginger</b> </h1>
+                     <p class="w3-text-grey">Powerful anti-inflammatory and antioxidant—supports digestion, reduces nausea, boosts immunity, eases pain, and aids metabolism.</p>
+
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="images/ingredients/ginger.jpeg" alt="Ginger" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+            </div>
+            <div id="Bowls & More" class="w3-container menu w3-padding-32 w3-white">
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Acai Smoothie Bowl</b> </h1>
+                     <p class="w3-text-grey">Pick any smoothie to use as the base for your bowl. Smoothie bowls come blended with acai and topped with fruit and our house granola</p>
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="Images/smoothies-bowls/Acai Smoothie Bowl.jpeg" alt="Acai Bowls & More" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Gluten Free Oats Bowl</b> </h1>
+                     <p class="w3-text-grey">Oats soaked in our house cashew milk, served cold, choice of 2 toppings included</p>
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="Images/smoothies-bowls/Gluten Free Oats Bowl.jpeg" alt="Gluten Free Oats Bowl" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Quinoa Bowl</b> </h1>
+                     <p class="w3-text-grey">Quinoa cooked in our house cashew milk, served cold, choice of 2 toppings included</p>
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="Images/smoothies-bowls/Quinoa Bowl.jpeg" alt="Quinoa Bowl" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Combination Bowl</b> </h1>
+                     <p class="w3-text-grey">Combination of oats and quinoa, served cold, choice of 2 toppings included</p>
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="Images/smoothies-bowls/Combination Bowl.jpeg" alt="Combination Bowl" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Vanilla Cashew Parfait</b> </h1>
+                     <p class="w3-text-grey">A vegan take on Greek-style yogurt, loaded with probiotics and topped with berries and our house granola</p>
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="Images/smoothies-bowls/Vanilla Cashew Parfait.jpeg" alt="Vanilla Cashew Parfait" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>Chia Seed Pudding</b> </h1>
+                     <p class="w3-text-grey">Available in Strawberry, Chocolate, Vanilla Goji, and Vanilla Matcha flavors</p>
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="Images/smoothies-bowls/Chia Seed Pudding.jpeg" alt="Chia Seed Pudding" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+               <div class="w3-row w3-margin-bottom">
+                  <!-- Left: Text -->
+                  <div class="w3-col s12 m8">
+                     <h1><b>House Granola</b> </h1>
+                     <p class="w3-text-grey">You asked for it, so we've made our granola available in 16 oz containers</p>
+                  </div>
+                  <div class="w3-col s12 m4">
+                     <img src="Images/smoothies-bowls/House Granola.jpeg" alt="House Granola" style="width:100%; max-width:200px;" class="w3-right">
+                  </div>
+               </div>
+               <hr>
+            </div>
+         </div>
       </div>
-    </div>
-    <hr>
-
-      
-    <div class="w3-row w3-margin-bottom">
-      <!-- Left: Text -->
-      <div class="w3-col s12 m8">
-    <h1><b>The Blaze</b> </h1>
-      <p class="w3-text-grey">strawberry, mango, banana, dates, ginger, cayenne, house cashew milk</p>
-  </div>
-
-      <div class="w3-col s12 m4">
-        <img src="Images/smoothies-bowls/417-blaze.jpg" alt="The Blaze" style="width:100%; max-width:200px;" class="w3-right">
-      </div>
-    </div>
-    <hr>
-
-   
-    <div class="w3-row w3-margin-bottom">
-      <!-- Left: Text -->
-      <div class="w3-col s12 m8">  
-    <h1><b>Tropic Energy</b> </h1>
-      <p class="w3-text-grey">mango, banana, dates, dragonfruit, brewed guayusa</p>
-  </div>
-
-      <div class="w3-col s12 m4">
-        <img src="Images/smoothies-bowls/452-tropic-energy.jpg" alt="Tropic Energy" style="width:100%; max-width:200px;" class="w3-right">
-      </div>
-    </div>
-    <hr>
-
-      
-    <div class="w3-row w3-margin-bottom">
-      <!-- Left: Text -->
-      <div class="w3-col s12 m8">
-    <h1><b>Basil Bomb</b> </h1>
-      <p class="w3-text-grey">strawberry, banana, basil, dates, house almond milk</p>
-  </div>
-
-      <div class="w3-col s12 m4">
-        <img src="Images/smoothies-bowls/basil-bomb.jpg" alt="Basil Bomb" style="width:100%; max-width:200px;" class="w3-right">
-      </div>
-    </div>
-    <hr>
-
-    
-    <div class="w3-row w3-margin-bottom">
-      <!-- Left: Text -->
-      <div class="w3-col s12 m8">
-    <h1><b>Blended Brew</b> </h1>
-      <p class="w3-text-grey">banana, cashew butter, cold brew coffee, cacao (optional)</p>
-  </div>
-
-      <div class="w3-col s12 m4">
-        <img src="Images/smoothies-bowls/451-blended-brew.jpg" alt="Blended Brew" style="width:100%; max-width:200px;" class="w3-right">
-      </div>
-    </div>
-    <hr>
-
-     
-    <div class="w3-row w3-margin-bottom">
-      <!-- Left: Text -->
-      <div class="w3-col s12 m8">
-    <h1><b>Cacao Monster</b> </h1>
-      <p class="w3-text-grey">banana, cashew butter, cacao, house almond milk</p>
-  </div>
-
-      <div class="w3-col s12 m4">
-        <img src="Images/smoothies-bowls/453-cacao-monster.jpg" alt="Cacao Monster" style="width:100%; max-width:200px;" class="w3-right">
-      </div>
-    </div>
-    <hr>
-
-    
-    <div class="w3-row w3-margin-bottom">
-      <!-- Left: Text -->
-      <div class="w3-col s12 m8">
-    <h1><b>Kid Dynamite</b> </h1>
-      <p class="w3-text-grey">banana, dragonfruit, house cashew milk</p>
-  </div>
-
-      <div class="w3-col s12 m4">
-        <img src="Images/smoothies-bowls/465-waterboy.jpg.jpg" alt="Kid Dynamite" style="width:100%; max-width:200px;" class="w3-right">
-      </div>
-    </div>
-    <hr>
-
-    <div id="Boosters" class="w3-container menu w3-padding-32 w3-white">
-      
-      
-      <h1><b>Acai</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
-
-      <h1><b>Acai</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
-
-      <h1><b>Chia Seeds</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
-
-      <h1><b>Hemp Protein</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
-
-      <h1><b>Spinach</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
-
-      <h1><b>Kale</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
-
-      <h1><b>Matcha</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
-
-      <h1><b>Goji Berries</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
-
-      <h1><b>Vegan Probiotic</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
-
-      <h1><b>Wheatgrass</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
-
-      <h1><b>Maca</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
-
-      <h1><b>Cacao</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
-
-      <h1><b>Aloe Vera</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
-
-      <h1><b>Coconut Oil</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
-
-      <h1><b>Flax Seeds</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
-
-      <h1><b>Ginger</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <hr>
-    </div>
-
-
-    <div id="Acai Bowls & More" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Acai Smoothie Bowl</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <p class="w3-text-grey">Pick any smoothie to use as the base for your bowl. Smoothie bowls come blended with acai and topped with fruit and our house granola</p>
-      <hr>
-
-      <h1><b>Gluten Free Oats Bowl</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <p class="w3-text-grey">Oats soaked in our house cashew milk, served cold, choice of 2 toppings included</p>
-      <hr>
-
-      <h1><b>Quinoa Bowl</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <p class="w3-text-grey">Quinoa cooked in our house cashew milk, served cold, choice of 2 toppings included</p>
-      <hr>
-
-      <h1><b>Combination Bowl</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <p class="w3-text-grey">Combination of oats and quinoa, served cold, choice of 2 toppings included</p>
-      <hr>
-
-      <h1><b>Vanilla Cashew Parfait</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <p class="w3-text-grey">A vegan take on Greek-style yogurt, loaded with probiotics and topped with berries and our house granola</p>
-      <hr>
-
-      <h1><b>Chia Seed Pudding</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <p class="w3-text-grey">Available in Strawberry, Chocolate, Vanilla Goji, and Vanilla Matcha flavors</p>
-      <hr>
-   
-      <h1><b>House Granola</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
-      <p class="w3-text-grey">You asked for it, so we've made our granola available in 16 oz containers</p>
-      <hr>
-      
-    </div><br>
-
-  </div>
-</div>
-
-
-<!-- About Container -->
-
-<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
-  <div class="w3-content">
-    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About The Juice Joint</h1>
-
-    <p> At The Juice Joint, we believe that wellness starts from within—and that means fueling our bodies with the best nature has to offer. Our mission is simple: serve up raw, organic fruits and vegetables in their most vibrant form to help you feel your best every day. Whether you’re sipping a cold-pressed juice, enjoying a smoothie, or grabbing a nourishing bowl, every ingredient we use is 100% organic, no exceptions. We don’t believe in “organic when possible”—if it’s not organic, it’s not on our menu. That’s our promise to you, your health, and the planet. Thanks for stopping by—we’re glad you’re here.</p>
-    
-    <img src="Images/logo-small.png" style="width:10%" class="w3-display-bottomright" alt="Logo">
-
-
-    <h1><b>Opening Hours</b></h1>
-    
-    <div class="w3-row">
-      <div class="w3-col s6">
-        <p>Mon - Friday 8:00 am - 3:00 pm</p>
-      </div>
-      <div class="w3-col s6">
-        <p>Saturday & Sunday 8:00 am - 3:00 pm </p>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-<!-- Image of location/map -->
-
-
-<!-- Contact -->
-<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="myMap">
-  <div class="center-wrapper">
-    <div class="w3-content">
-      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
-      <p>Find us at one of our two locations <br>(1) 2345 Wisconsin Avenue<br> and <br>(2) 3508 O Street <br> Both in Washington, DC! </p>
-
-      <img src="Images/locations/2346 Wisconsin Ave.png" style="width:45%" class="w3-display-center" alt="Location 1">
-      <img src="Images/locations/3508 O St.png" style="width:45%" class="w3-display-center" alt="Location 2">
-
-      <p>Or Call us at: +1 (434) 234-3044</p>
-
-      <p><span class="w3-tag">Remember! We are 100% Organic/Non-GMO/Vegan/Gluten-Free/Peanut-Free/Soy-Free/Dairy Free 100% of the time</span></p>
-    </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
-  <p>Website made by Yaoyao, Abha, and Ani using the express help of <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-
-<script>
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-red";
-}
-document.getElementById("myLink").click();
-</script>
-
-</body>
+      <!-- About Section -->
+      <section class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+         <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About The Juice Joint</h1>
+            <p>
+               At The Juice Joint, we believe that wellness starts from within...
+               (your full paragraph here)
+            </p>
+            <img src="images/logo-small.png" style="width:10%" class="w3-display-bottomright" alt="Logo">
+            <h1><b>Opening Hours</b></h1>
+            <div class="w3-row">
+               <div class="w3-col s6">
+                  <p>Mon - Friday 8:00 am - 3:00 pm</p>
+               </div>
+               <div class="w3-col s6">
+                  <p>Saturday & Sunday 8:00 am - 3:00 pm </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Contact Section -->
+      <section class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="myMap">
+         <div class="center-wrapper">
+            <div class="w3-content">
+               <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+               <p>Find us at one of our two locations...</p>
+               <img src="images/locations/2346 Wisconsin Ave.png" style="width:45%" alt="Location 1">
+               <img src="images/locations/3508 O St.png" style="width:45%" alt="Location 2">
+               <p>Or Call us at: +1 (434) 234-3044</p>
+               <p><span class="w3-tag">Remember! We are 100% Organic/Non-GMO/Vegan/Gluten-Free/Peanut-Free/Soy-Free/Dairy Free 100% of the time</span></p>
+            </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+         <p>Website made by Yaoyao, Abha, and Ani using the express help of 
+            <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a>
+         </p>
+      </footer>
+      <!-- Script -->
+      <script>
+         function openMenu(evt, menuName) {
+           var i, x, tablinks;
+           x = document.getElementsByClassName("menu");
+           for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+           }
+         
+           tablinks = document.getElementsByClassName("tablink");
+           for (i = 0; i < tablinks.length; i++) {
+             tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+           }
+         
+           document.getElementById(menuName).style.display = "block";
+           evt.currentTarget.className += " w3-red";
+         }
+         
+         window.onload = function () {
+           document.getElementById("myLink").click();
+         };
+      </script>
+   </body>
 </html>
