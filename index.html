@@ -23,6 +23,19 @@
          align-items: center;
          text-align: center;
          }
+         .blend-banner {
+         position: fixed;
+         top: 10px;
+         right: 10px;
+         z-index: 999;
+       }
+
+         /* Hide the banner on small screens */
+         @media (max-width: 768px) {
+         .blend-banner {
+         display: none;
+         }
+      }
       </style>
    </head>
    <body>
@@ -33,12 +46,9 @@
             <a href="#Menu" class="w3-bar-item w3-button">Menu</a>
             <a href="#about" class="w3-bar-item w3-button">About</a>
             <a href="#myMap" class="w3-bar-item w3-button">Contact</a>
-<!--            
-            <div style="position: fixed; top: 10px; right: 10px; z-index: 999;">
-              <span class="w3-hide-small">Nature’s Best in Every Blend!</span>
-            </div>
-        
--->
+            <div class="blend-banner">
+               <span>Nature’s Best in Every Blend!</span>
+             </div>
          </div>
       </div>
       <!-- Header -->
