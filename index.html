@@ -8,53 +8,156 @@
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
       <style>
-         body, html {height: 100%}
-         body,h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
-         .menu {display: none}
-         .bgimg {
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-image: url("images/backgrounds/farming.jpg");
-         min-height: 90%;
-         }
-         .center-wrapper {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         text-align: center;
-         }
-         .blend-banner {
-         position: fixed;
-         top: 10px;
-         right: 10px;
-         z-index: 999;
-       }
+      /* Ensure full height of page */
+      body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Prevent horizontal scroll due to overflow */
+      }
 
-         /* Hide the banner on small screens */
-         @media (max-width: 768px) {
-         .blend-banner {
+      /* Consistent font across headings and body */
+      body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Verdana", sans-serif;
+      margin: 0;
+      padding: 0.5rem;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      }
+
+      /* Set base font sizes for text hierarchy */
+      body {
+      font-size: 1rem; /* base size ~16px */
+      line-height: 1.6;
+      }
+
+      h1 {
+      font-size: 1.85rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      }
+
+      h2 {
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+      }
+
+      h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      }
+
+      h4 {
+      font-size: 1.25rem;
+      }
+
+      h5, h6 {
+      font-size: 1rem;
+      }
+
+      /* Paragraphs and general text */
+      p, .w3-col.s4.tablink.w3-padding-large.w3-hover-red {
+      font-size: 1.75rem;
+      line-height: 1.5;
+      padding: 0.5rem 0;
+      margin: 0;
+      max-width: 100%;
+      white-space: normal;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      }
+
+      /* Hide menu by default */
+      .menu {
+      display: none;
+      }
+
+      /* Responsive background image section */
+      .bgimg {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("images/backgrounds/food.jpg");
+      min-height: 90%;
+      padding: 2rem;
+      }
+
+      /* Center content and prevent overflow */
+      .center-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      padding: 1rem;
+      flex-wrap: wrap;
+      width: 100%;
+      box-sizing: border-box;
+      }
+
+      /* Banner styles */
+      .blend-banner {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 999;
+      max-width: 90vw;
+      word-wrap: break-word;
+      }
+
+      /* Hide the banner on small screens */
+      @media (max-width: 768px) {
+      .blend-banner {
          display: none;
-         }
       }
-            /* Default styles for text */
+      }
+
+      /* Default button/tab styles */
       .tablink {
-         font-size: 1rem;  /* Default font size */
-         padding: 10px 20px;
+      font-size: 1rem;
+      padding: 10px 20px;
+      max-width: 100%;
+      box-sizing: border-box;
+      white-space: normal;
+      word-wrap: break-word;
       }
 
-      /* Adjust text size for larger screens */
+      /* Increase font size for larger screens */
       @media (min-width: 768px) {
-         .tablink {
-            font-size: 1.5rem; /* Increase text size for medium screens */
-         }
+      .tablink {
+         font-size: 1.4rem;
+      }
       }
 
-      /* Adjust text size for smaller screens */
+      /* Decrease font size for smaller screens */
       @media (max-width: 480px) {
-         .tablink {
-            font-size: 0.9rem; /* Decrease text size for small screens */
-         }
+      .tablink {
+         font-size: 0.9rem;
       }
+
+      body {
+         font-size: 0.95rem;
+      }
+
+      h1 {
+         font-size: 1.25rem;
+      }
+
+      h2 {
+         font-size: 1.0rem;
+      }
+
+      h3 {
+         font-size: 0.75rem;
+      }
+      p, .w3-col.s4.tablink.w3-padding-large.w3-hover-red 
+      {
+         font-size: 1.0rem;
+      }
+      }
+   
+
+
+
       </style>
    </head>
    <body>
@@ -94,7 +197,7 @@
           </div>
         </div>
       
-      </header
+      </header>
       <!-- Include your full menu sections here (unchanged from your existing content) -->
       <!-- Below is the fixed menu tab structure -->
       <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="Menu">
